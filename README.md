@@ -12,3 +12,17 @@
 
 ```bash
 php artisan test
+
+
+API Endpoints (Controller)
+POST  /api/register
+    -request (name, email, password, password_confirmation, company_id, is_admin {1,0})
+POST  /api/login
+    -request (email, password)
+POST /api/v1/templates
+     -request (name, prompt)
+GET /api/v1/templates
+GET /api/v1/templates/{id}
+PUT /api/v1/templates/{id}
+DELETE /api/v1/templates/{id}
+
